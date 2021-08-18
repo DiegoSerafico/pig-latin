@@ -1,12 +1,16 @@
 function pigLatin(arguments) {
+  let vowelWay = []
+  let newArray = arguments.split(" ");
   const vowels = ["a", "e", "i", "o", "u"]
   for (let i = 0; i < vowels.length; i++) {
     console.log(vowels[i]);
-    if (arguments.startsWith(vowels[i])) {
-      return true;
+    if (newArray[i].startsWith(vowels[i])) {
+       vowelWay.push(newArray[i] + "way");
+      //  newArray = newArray[i] + "way";
+      //  newArray.push(newArray[i] + "way");
     }
   }
-  return false;
+  return newArray;
 }
 
 pigLatin("a");
