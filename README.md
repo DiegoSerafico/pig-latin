@@ -11,17 +11,17 @@ Ui  7. show final string to user
 
 Describe startVowel();
 
-Test: "It recognizes a vowel."
+<!-- Test: "It recognizes a vowel."
 Code: startVowel("a");
-Expected Output: True
+Expected Output: True -->
 
-Test: "It recognizes first letter of word is vowel."
+<!-- Test: "It recognizes first letter of word is vowel."
 Code: startVowel("apple")'
-Expected Output: True
+Expected Output: True -->
 
-Test: "It recognizes vowels in a word regardless of case.
+<!-- Test: "It recognizes vowels in a word regardless of case.
 Code: startVowel("Apple")'
-Expected Output: True
+Expected Output: True -->
 
 Test: "It recognizes vowels in a word regardless of punctuation.
 Code: startVowel("apple!")'
@@ -54,20 +54,65 @@ Test: "It should return false for an empty string."
 Code: startVowel("");
 Expected Output: false
 
+
 Describe startQu();
 
+Test: "It recognizes a qu string."
+Code: startQu("qu");
+Expected Output: True
+
+Test: "It recognizes first letters of word are qu."
+Code: startQu("queef")'
+Expected Output: True
+
+Test: "It recognizes qu in a word regardless of case.
+Code: startQu("Queef")'
+Expected Output: True
+
+Test: "It recognizes qu in a word regardless of punctuation.
+Code: startQu("Queef!")'
+Expected Output: True
+
+Test: "It should return false for an empty string."
+Code: startQu("");
+Expected Output: false
+
+
 Describe pigLatin();
+
+Test: "It should output all the words that start with vowels into pig latin"
+Code: startVowel("apples and oranges");
+Expected Output: "applesway andway orangesway"
+
+Test: "It should output all the words that start with qu into pig latin"
+Code: startVowel("queens who queef");
+Expected Output: "eenquay howway eefquay"
+
+Test: "It should output all the words that start with consonants into pig latin"
+Code: startVowel("cheese and crackers");
+Expected Output: "eesechay andway ackerscray"
+
+Test: "It should join the array and display the pig latin"
+Code: array.join();
+Expected Output: 
+
+split into an array
+array.forEach word
+if starts with vowel 
+  do something
+if starts with Qu 
+  do something else
+else starts with consonant 
+  do something else else 
+array.prototype.join
+
+
+
+
 
 Test: "It concatinates the string "way" to the end of the word if it starts with a vowel."
 Code: startVowel("apple")'
 Expected Output: "appleway"
-
-
-
-
-
-
-
 
 Describe: vowelCounter();
 

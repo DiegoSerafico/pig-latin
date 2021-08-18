@@ -1,25 +1,26 @@
-function pigLatin(arguments) {
-  let vowelWay = []
-  let newArray = arguments.split(" ");
+// Utility Logic
+function startsWithVowel(word) {
   const vowels = ["a", "e", "i", "o", "u"]
   for (let i = 0; i < vowels.length; i++) {
     console.log(vowels[i]);
-    if (newArray[i].startsWith(vowels[i])) {
-       vowelWay.push(newArray[i] + "way");
-      //  newArray = newArray[i] + "way";
-      //  newArray.push(newArray[i] + "way");
+    if (word.toLowerCase().startsWith(vowels[i])) {
+      return true;
     }
   }
-  return newArray;
+  return false;
 }
 
-pigLatin("a");
+function punct(word) {
+  const punks = [".", ",", "!", "?", "-", ";", ":", "/"]
+  for (let i = 0; i < punks.length; i++) {
+    if (word.includes(punks[i])) {
+      return true;
+    }
+  }
+  return false;
+}
 
-get first letter off of one word
-includes(searchString, position)
+startVowel("a");
 
-if the first letter of the word === vowel[i]
-then return true
-
-split input into array with each word
-use a for loop with charAt to identify if it starts with a vowel
+// Business Logic
+// User Interface Logic
