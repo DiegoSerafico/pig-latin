@@ -32,6 +32,18 @@ function startsWithConsonant (word) {
   return false;
 }
 
+function startsWithConsonant (word) {
+  const consonants = ["b", "c", "d", "f", "h", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "v", "w", "x", "y", "z"];
+  for (let i = 0; i < consonants.length; i++) {
+    if (word.toLowerCase().startsWith(consonants[i])) {
+      return true;
+    }
+  }
+  return false;
+}
+
+
+const regex = 
 // function punct(word) {
 //   const punks = [".", ",", "!", "?", "-", ";", ":", "/"]
 //   for (let i = 0; i < punks.length; i++) {

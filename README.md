@@ -34,9 +34,9 @@ Expected Output: false -->
 
 Describe startConso();
 
-Test: "It recognizes a consonant."
+<!-- Test: "It recognizes a consonant."
 Code: startConso("b");
-Expected Output: true
+Expected Output: true -->
 
 Test: "It recognizes the first string of letters in a word are consonants."
 Code: startConso("younglings");
