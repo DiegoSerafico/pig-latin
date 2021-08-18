@@ -27,9 +27,9 @@ Test: "It recognizes vowels in a word regardless of punctuation.
 Code: startVowel("apple!")'
 Expected Output: True
 
-Test: "It should return false for an empty string."
+<!-- Test: "It should return false for an empty string."
 Code: startVowel("");
-Expected Output: false
+Expected Output: false -->
 
 
 Describe startConso();
